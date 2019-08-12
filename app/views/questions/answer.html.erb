@@ -1,5 +1,6 @@
 <h1>The coatch will answer to you</h1>
-<p>Find me in app/views/questions/answer.html.erb</p>
+<%= params[:question] %>
+<p>-You</p>
 <%= @answer %>
-
-<a href="ask">Ask a new question</a>
+<p>-Your coach</p>
+<%= link_to "Ask a new question", ask_path %>
